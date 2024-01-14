@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="b">
+    <div class="input">
+        <h1>STUDENT FORM</h1>
+        <form>
+            <table border="1" class="inptab">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" placeholder="Enter your Name" id="n"></td>
+                </tr>
+
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" placeholder="Enter your Age" id="a"></td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td class="rg">
+                        <input type="radio" name="Gender" id="g1" value="Male">Male
+                        <input type="radio" name="Gender" id="g1" value="Female">Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Course</td>
+                    <td>
+                        <select id="c">
+                            <option>Javascript</option>
+                            <option>C++</option>
+                            <option>PYTHON</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="email" placeholder="Enter your E-mail" id="e"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"> <button class="btnsave">SAVE</button> </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="result">
+        <form class="firt">
+            <table border="1" class="tab">
+                <tr>
+                    <td>NAME</td>
+                    <td>AGE</td>
+                    <td>GENDER</td>
+                    <td>COURSE</td>
+                    <td>E-MAIL</td>
+                    <td>ACTION</td>
+                </tr>
+                <tr class="ans" id="d1" >
+                    <td><input type="text" id="nr" class="ir"></td>
+                    <td><input type="text" id="ar" class="ir"></td>
+                    <td><input type="text" id="gr" class="ir"></td>
+                    <td><input type="text" id="cr" class="ir"></td>
+                    <td><input type="text" id="er" class="ir"></td>
+                    <td><button onclick="Delete(event)" class="btn">Delete</button></td>
+                </tr>
+
+
+
+            </table>
+        </form>
+    </div>
+    <script src="script.js">
+        // var n = document.getElementById("n")
+        // var a = document.getElementById("a")
+        // var g = document.getElementsByName("Gender")
+        // var c = document.getElementById("c")
+        // var e = document.getElementById("e")
+        // var save = document.querySelector(".btnsave")
+        // var nr = document.getElementById("nr")
+        // var ar = document.getElementById("ar")
+        // var gr = document.getElementById("gr")
+        // var cr = document.getElementById("cr")
+        // var er = document.getElementById("er")
+        // var tab = document.querySelector(".tab")
+        // var ans = document.querySelector(".ans")
+
+        // function genresult() {
+        //     for (let i = 0; i < g.length; i++) {
+        //         if (g[i].checked) {
+        //             return gr.value = g[i].value;
+        //         }
+        //     }
+        // }
+
+        // save.addEventListener("click", function () {
+        //     event.preventDefault()
+
+        //     var div = document.createElement("tr")
+        //     div.setAttribute("class", "ans")
+        //     div.innerHTML = `<tr >
+        //                 <td><input type="text" value="${nr.value = n.value}"></td>
+        //                 <td><input type="text" value="${ar.value = a.value}"></td>
+        //                 <td><input type="text" value="${genresult()}"></td>
+        //                 <td><input type="text" value="${cr.value = c.value}"></td>
+        //                 <td><input type="text" value="${er.value = e.value}"></td>
+        //                 <td><button onclick="Delete(event)" class="btn">Delete</button></td>
+        //             </tr>`
+        //     tab.append(div)
+        // })
+
+        // var d1 = document.querySelector(".btn")
+
+        // function Delete(event) {
+        //     event.target.closest("tr").remove()
+        // }
+
+    </script>
+</body>
+
+</html>
