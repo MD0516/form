@@ -6,6 +6,7 @@ body{
     background-color: black;
     color: white;
     flex-wrap: wrap;
+    color: cyan;
 }
 
 .btn{
