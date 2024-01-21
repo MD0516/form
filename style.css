@@ -54,3 +54,6 @@ input text{
     cursor: pointer;
 }
 
+.info{
+    font-variant: small-caps;
+}
